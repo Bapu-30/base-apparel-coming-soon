@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 85%;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.43);
+}
+
+.infoLeft {
+    background: url("images/bg-pattern-desktop.svg");
+    background-size: contain;
+    max-width: 60%;
+}
+
+.imageCatlog {
+
+    overflow: hidden;
+}
+
+.imageCatlog img {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    max-width: 70%;
+    margin: 3rem auto;
+}
+
+.heading {
+    margin-top: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    line-height: 4em;
+}
+
+.heading .top {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.heading .mid,
+.bottom {
+    font-size: 3.5rem;
+}
+
+.desc {
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+    padding: 2rem 7rem 0 0;
+    line-height: 1.5rem;
+
+}
+
+.mailBox {
+    margin-top: 30px;
+    position: relative;
+}
+
+.mailBox input {
+    padding: 18px 0px;
+    width: 26rem;
+    color: hsl(0, 36%, 70%);
+    padding-left: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+.mailBox input:focus {
+    outline: none !important;
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.mailBox button {
+    width: 100px;
+    padding: 16px 0;
+    border-radius: 40px;
+    border: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    right: 115px;
+    top: 0px;
+    box-shadow: 4px 17px 29px -12px rgba(0, 0, 0, 0.62);
+    cursor: pointer;
+
+}
+
+.mailBox button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 49%, 72%));
+}
+
+.error {
+    position: relative;
+}
+
+.errorIcon {
+    position: absolute;
+    top: -40px;
+    right: 230px;
+    display: none;
+}
+
+.errmsg {
+    margin-top: 13px;
+    color: hsl(0, 93%, 68%);
+    margin-left: 2.5rem;
+    font-size: 15px;
+    display: none;
+
+}
